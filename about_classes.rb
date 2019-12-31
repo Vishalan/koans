@@ -22,7 +22,7 @@ class AboutClasses < Neo::Koan
     assert_equal [], fido.instance_variables
 
     fido.set_name("Fido")
-    assert_equal [:id], fido.instance_variables
+    assert_equal [:@name], fido.instance_variables
   end
 
   def test_instance_variables_cannot_be_accessed_outside_the_class
@@ -75,7 +75,7 @@ class AboutClasses < Neo::Koan
   # ------------------------------------------------------------------
 
   class Dog4
-    attr_reader :id
+    attr_reader :name
 
     def set_name(a_name)
       @name = a_name
@@ -93,7 +93,7 @@ class AboutClasses < Neo::Koan
   # ------------------------------------------------------------------
 
   class Dog5
-    attr_accessor :id
+    attr_accessor :name
   end
 
 
@@ -107,7 +107,7 @@ class AboutClasses < Neo::Koan
   # ------------------------------------------------------------------
 
   class Dog6
-    attr_reader :id
+    attr_reader :name
     def initialize(initial_name)
       @name = initial_name
     end
@@ -136,7 +136,7 @@ class AboutClasses < Neo::Koan
   # ------------------------------------------------------------------
 
   class Dog7
-    attr_reader :id
+    attr_reader :name
 
     def initialize(initial_name)
       @name = initial_name

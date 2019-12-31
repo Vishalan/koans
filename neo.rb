@@ -411,7 +411,7 @@ ENDTEXT
   class Koan
     include Assertions
 
-    attr_reader :id, :failure, :koan_count, :step_count, :koan_file
+    attr_reader :name, :failure, :koan_count, :step_count, :koan_file
 
     def initialize(name, koan_file=nil, koan_count=0, step_count=0)
       @name = name

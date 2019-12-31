@@ -22,7 +22,7 @@ class AboutModules < Neo::Koan
   class Dog
     include Nameable
 
-    attr_reader :id
+    attr_reader :name
 
     def initialize
       @name = "Fido"

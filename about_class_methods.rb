@@ -71,7 +71,7 @@ class AboutClassMethods < Neo::Koan
   # ------------------------------------------------------------------
 
   class Dog
-    attr_accessor :id
+    attr_accessor :name
   end
 
   def Dog.name
